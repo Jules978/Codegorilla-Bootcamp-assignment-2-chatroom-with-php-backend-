@@ -1,0 +1,96 @@
+body{
+	background-image: url('background.jpg');
+	
+	
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+	font-size: 20px;
+	color: #072530;
+	margin: auto;
+	
+}
+h1{
+
+
+}
+
+#welcome{
+	margin:auto;
+	text-align: center;
+	background-color: #2f8e9a;  
+	color: #072530 ;
+}
+
+#username{
+text-align: center;
+background-color: #2f8e9a ; 
+padding: 5px;
+display: block;
+margin:auto;
+
+width:30%;
+
+}
+#usernameinput{
+	background-color: #ccd8dc ; 
+margin-bottom: 5px;
+border: none;
+
+}
+#usernamesubmit{
+background-color: #ccd8dc ; 
+color:#072530  ;
+border: none;
+
+}
+
+#allchat{
+	text-align: center;
+	display: none;
+	margin: auto;
+	width:100%;
+	
+	
+	
+
+}
+#messages{
+	margin:auto;
+	text-align: left;
+	padding:5px;
+	background-color: #ccd8dc;
+	overflow-y: scroll;
+	height: 50%;
+	width:90%;
+
+
+
+}
+#chatinput{
+	width:90%;
+	margin:auto;
+	margin-top: 5px;
+	padding:5px;
+	
+	
+	
+}
+
+#inputMessage{
+	width: 100%;
+	background-color: #ccd8dc;
+	color:#072530 ;
+	border: none;
+	margin:auto;
+	margin-top: 5px;
+}
+#submitbutton{
+	
+	width:25%;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+	margin:auto;
+	margin-top: 5px;
+	background-color: #ccd8dc;
+
+}
