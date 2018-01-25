@@ -77,3 +77,81 @@ body{
 	font-weight: bold;
 	margin-top: 5px;
 }
+
+@media only screen and (max-width: 1000px) {
+
+	body{
+	font-size: 40px;
+	color: #072530;
+	
+}
+    #username{
+	margin:auto;
+
+	text-align: center;
+	display: block;
+	background-color: #2f8e9a; 
+	width: 100%;
+	height: 75%;
+	
+	}
+#usernameinput{
+	text-align: center;
+	margin:auto;
+	margin-bottom: 5px;
+	width:100%;
+	height: 20%;
+	font-size: 40px;
+	border: none;
+}
+
+#usernamesubmit{
+	margin:auto;
+	font-size: 40px;
+	width: 100%;
+	height: 20%;
+	border: none;
+}
+
+#messages{
+	font-size: 20px;
+	margin:auto;
+	text-align: left;
+	background-color: #ccd8dc;
+	padding:5px;
+	height: 50%;
+	width:100%;
+	overflow-y: scroll;
+}
+
+#chatinput{
+	margin:auto;
+	margin-top: 5px;
+	font-size: 40px;
+	width:100%;
+}
+
+#inputMessage{
+	margin:auto;
+	background-color: #ccd8dc;
+	width: 100%;
+	height:10%;
+	color:#072530 ;
+	border: none;
+	font-size: 40px;
+	margin-top: 5px;
+}
+
+#submitbutton{
+	margin:auto;
+	text-align: center;
+	background-color: #2f8e9a;
+	width:100%;
+	height:10%;
+	border: none;
+	font-weight: bold;
+	font-size: 40px;
+	margin-top: 5px;
+}
+
+}
