@@ -18,3 +18,4 @@ The backend is not working with the group API protocol (https://app.swaggerhub.c
 
 # to do
 Upgrade backend to include an actual database.
+Get backend to work according to the group API protocil
