@@ -1,16 +1,1 @@
-CHATBOT : Hello, this messages need to be here, otherwise this thing doesn't work..
-(16:29:15) wfwf : fwfwf
-(16:29:55) dwdw : wdwd
-(16:30:59) efef : efef
-(16:32:16) wfw : wfwf
-(16:32:29) wdwd : wdwd
-(16:33:05) fef : efef
-(16:33:18) wdw : gege
-(16:33:35) wdwd : wdwdw
-(16:34:09) dwdw : efefef
-(16:34:32) wfwfwf : ohfwf
-(16:34:38) egege : gege
-(16:34:56) dwdw : dwdawfd
-(16:35:02) dwdw : wfwafwa
-(16:36:23)  : wwg
-(16:37:13) fwfw : fwafwa
+CHATBOT : Hello!
