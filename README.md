@@ -17,5 +17,5 @@ API protocol attempt: https://app.swaggerhub.com/apis/JJD/chatweek2/1.0.0
 The backend is not working with the group API protocol (https://app.swaggerhub.com/apis/RJK-Gorilla/GorillaChat1/1.0.0#/). 
 
 # to do
-Upgrade backend to include an actual database.
-Get backend to work according to the group API protocil
+Upgrade backend to include an actual database,
+Get backend to work according to the group API protocol.
