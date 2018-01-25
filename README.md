@@ -8,9 +8,9 @@ Sort of functional: Messages and usernames are send to php (via javascript), and
 The messages are displayed by dumping the entire txt file into a div. This is done via a GET request function, repeats every second. 
  
 # changes from v1:
-Fixed refresh issue
-Updated css (more mobile friendly)
-Added timestamp to messages
+Fixed refresh issue,
+Updated css (more mobile friendly),
+Added timestamp to messages,
 API protocol attempt: https://app.swaggerhub.com/apis/JJD/chatweek2/1.0.0
 
 # issues
