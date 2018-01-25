@@ -1,16 +1,9 @@
 body{
 	background-image: url('background.jpg');
-	
-	
 	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 	font-size: 20px;
 	color: #072530;
 	margin: auto;
-	
-}
-h1{
-
-
 }
 
 #welcome{
@@ -21,76 +14,66 @@ h1{
 }
 
 #username{
-text-align: center;
-background-color: #2f8e9a ; 
-padding: 5px;
-display: block;
-margin:auto;
-
-width:30%;
-
+	margin:auto;
+	text-align: center;
+	display: block;
+	background-color: #2f8e9a; 
+	width: 60%;
+	padding: 5px;
 }
+
 #usernameinput{
-	background-color: #ccd8dc ; 
-margin-bottom: 5px;
-border: none;
-
+	background-color: #ccd8dc; 
+	margin-bottom: 5px;
+	max-width: 90%;
+	border: none;
 }
-#usernamesubmit{
-background-color: #ccd8dc ; 
-color:#072530  ;
-border: none;
 
+#usernamesubmit{
+	background-color: #ccd8dc; 
+	color:#072530;
+	font-weight: bold;
+	border: none;
 }
 
 #allchat{
+	margin: auto;
 	text-align: center;
 	display: none;
-	margin: auto;
 	width:100%;
-	
-	
-	
-
 }
+
 #messages{
 	margin:auto;
 	text-align: left;
-	padding:5px;
 	background-color: #ccd8dc;
-	overflow-y: scroll;
+	padding:5px;
 	height: 50%;
 	width:90%;
-
-
-
+	overflow-y: scroll;
 }
+
 #chatinput{
-	width:90%;
 	margin:auto;
 	margin-top: 5px;
-	padding:5px;
-	
-	
-	
+	width:90%;
 }
 
 #inputMessage{
-	width: 100%;
+	margin:auto;
 	background-color: #ccd8dc;
+	width: 100%;
 	color:#072530 ;
 	border: none;
-	margin:auto;
 	margin-top: 5px;
 }
+
 #submitbutton{
-	
+	margin:auto;
+	text-align: center;
+	background-color: #2f8e9a;
 	width:25%;
 	border: none;
-	text-align: center;
 	font-weight: bold;
-	margin:auto;
 	margin-top: 5px;
-	background-color: #ccd8dc;
-
 }
