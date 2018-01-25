@@ -1,8 +1,0 @@
-body{
-	background: grey;
-}
-#messages{
-	background-color: white;
-	overflow-y: scroll;
-	height: 50%;
-}

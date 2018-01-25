@@ -1,26 +1,39 @@
 <html>
+
 <head>
 	<title> it's something! </title>
-	<link rel="stylesheet" type="text/css" href="stijl.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 
-<div id=messages></div>
+  <div id="welcome"><h1> Hello There</h1></div>
+<div id="username"> 
+  <p>Please enter a username: </p>
+  <form id="form1" onsubmit="start(); return false;">
+    <input id="usernameinput" type="text" placeholder="username" name="usernameinput" ><br />
+    <input id="usernamesubmit" type="submit" value="ENTER" onclick= "start(); return false;">
+  </form>
+</div>
 
-	
-	<form  id= "chatform" onsubmit="sendmessages(); return false;"> 
-   <input id="inputUsername" type="text" name="username" placeholder="username"><br>
-    <input id= "inputMessage" type="text" name="message" placeholder="YOUR MESSAGE"><br>
-    <input type="submit" value="SEND" onclick= "sendmessages(); return false;">
-    </form>
+<div id="allchat" >
+  <div id="messages"></div>
+
+  <div id="chatinput">
+  <form  id= "chatform" onsubmit="sendmessages(); return false;"> 
+     <input id= "inputMessage" type="text" name="message" placeholder="YOUR MESSAGE"><br />
+     <input id="submitbutton" type="submit" value="SEND" onclick= "sendmessages(); return false;">
+  </form>
+  </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+
+
   
 
-  	
 
-    <script src="index.js"></script>
-
-
-  
-
-</form>
 </body>
+</html>
