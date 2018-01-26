@@ -9,6 +9,7 @@ body{
 #welcome{
 	margin:auto;
 	width: 100%;
+	
 	display:block;
 	text-align: center;
 	background-color: #2f8e9a;  
@@ -20,7 +21,9 @@ body{
 	text-align: center;
 	display: block;
 	background-color: #2f8e9a; 
-	width: 60%;
+	width: 40%;
+
+	
 	
 }
 
@@ -30,10 +33,18 @@ body{
 	max-width: 90%;
 	border: none;
 }
+#mykeyinput{
+	background-color: #ccd8dc; 
+	margin-bottom: 5px;
+	max-width: 90%;
+	border: none;
+}
+
 
 #usernamesubmit{
 	background-color: #ccd8dc; 
 	color:#072530;
+	margin-bottom: 10px;
 	font-weight: bold;
 	border: none;
 }
@@ -109,7 +120,18 @@ body{
 	height: 50%;
 	
 	}
-#usernameinput{
+#usernameinput{  
+	text-align: center;
+	display:block;
+	margin:auto;
+	margin-bottom: 5px;
+	width:100%;
+	height: 20%;
+	font-size: 40px;
+	border: none;
+}
+
+#mykeyinput{  
 	text-align: center;
 	display:block;
 	margin:auto;

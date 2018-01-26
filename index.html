@@ -9,9 +9,10 @@
 
   <div id="welcome"><h1> Hello There</h1></div>
 <div id="username"> 
-  <p>Please enter a username: </p>
+  <p>Please enter a username and pick a chatroom: </p>
   <form id="form1" onsubmit="start(); return false;">
     <input id="usernameinput" type="text" placeholder="username" name="usernameinput" ><br />
+    <input id="mykeyinput" type="text" placeholder="chatroom" name="mykeyinput" ><br />
     <input id="usernamesubmit" type="submit" value="ENTER" onclick= "start(); return false;">
   </form>
 </div>
@@ -24,6 +25,8 @@
      <input id= "inputMessage" type="text" name="message" placeholder="YOUR MESSAGE"><br />
      <input id="submitbutton" type="submit" value="SEND" onclick= "sendmessages(); return false;">
   </form>
+  
+
   </div>
 </div>
 
