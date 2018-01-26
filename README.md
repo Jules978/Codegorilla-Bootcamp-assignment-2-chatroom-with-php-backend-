@@ -10,6 +10,7 @@ Enter your username, and a chatroom (e.g. "chat").
 # version 3 (26.01.2018)
 Sort of functional: Messages and usernames are send to php (via javascript), and saved to a text file (chat.txt) as a string. 
 The messages are displayed by dumping the entire txt file into a div. This is done via a GET request function, repeats every second. 
+(sorry for the messy code, I ran out of time.)
 
  
 # changes from v2:
