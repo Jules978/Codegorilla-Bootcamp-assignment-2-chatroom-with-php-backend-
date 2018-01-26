@@ -1,11 +1,16 @@
 # chatweek2
 CodeGorilla assignment 2: Chat client with backend. 
 
-Another Chat client, this time with backend (php and a .txt file, for now). Live version available at: http://wijzijncodegorilla.nl/julia/chat/
+Another chat client, this time with backend (SQL). Live version available at: http://wijzijncodegorilla.nl/julia/chat/
+
+Enter your username, and a chatroom (e.g. "chat"). 
+
+
  
 # version 3 (26.01.2018)
 Sort of functional: Messages and usernames are send to php (via javascript), and saved to a text file (chat.txt) as a string. 
 The messages are displayed by dumping the entire txt file into a div. This is done via a GET request function, repeats every second. 
+
  
 # changes from v2:
 Updated css (more mobile friendly).
