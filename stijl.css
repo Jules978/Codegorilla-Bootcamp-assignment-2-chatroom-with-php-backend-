@@ -8,6 +8,8 @@ body{
 
 #welcome{
 	margin:auto;
+	width: 100%;
+	display:block;
 	text-align: center;
 	background-color: #2f8e9a;  
 	color: #072530 ;
@@ -19,7 +21,7 @@ body{
 	display: block;
 	background-color: #2f8e9a; 
 	width: 60%;
-	padding: 5px;
+	
 }
 
 #usernameinput{
@@ -38,6 +40,7 @@ body{
 
 #allchat{
 	margin: auto;
+
 	text-align: center;
 	display: none;
 	width:100%;
@@ -47,7 +50,7 @@ body{
 	margin:auto;
 	text-align: left;
 	background-color: #ccd8dc;
-	padding:5px;
+	
 	height: 50%;
 	width:90%;
 	overflow-y: scroll;
@@ -62,7 +65,7 @@ body{
 #inputMessage{
 	margin:auto;
 	background-color: #ccd8dc;
-	width: 100%;
+	
 	color:#072530 ;
 	border: none;
 	margin-top: 5px;
@@ -83,20 +86,32 @@ body{
 	body{
 	font-size: 40px;
 	color: #072530;
+	background-attachment: fixed;
+	background-size: 100% 100%;
 	
+}
+#welcome{
+	margin:auto;
+	display:block;
+	text-align: center;
+	background-color: #2f8e9a;  
+	color: #072530 ;
+	width: 100%;
 }
     #username{
 	margin:auto;
-
+        font-size: 60px;
+        display:block;
 	text-align: center;
 	display: block;
 	background-color: #2f8e9a; 
 	width: 100%;
-	height: 75%;
+	height: 50%;
 	
 	}
 #usernameinput{
 	text-align: center;
+	display:block;
 	margin:auto;
 	margin-bottom: 5px;
 	width:100%;
@@ -107,24 +122,27 @@ body{
 
 #usernamesubmit{
 	margin:auto;
+	display:block;
 	font-size: 40px;
-	width: 100%;
+	width: 90%;
 	height: 20%;
 	border: none;
 }
 
 #messages{
-	font-size: 20px;
+	font-size: 40px;
+	display:block;
 	margin:auto;
 	text-align: left;
 	background-color: #ccd8dc;
-	padding:5px;
+	
 	height: 50%;
-	width:100%;
+	width:99%;
 	overflow-y: scroll;
 }
 
 #chatinput{
+	display:block;
 	margin:auto;
 	margin-top: 5px;
 	font-size: 40px;
@@ -133,8 +151,9 @@ body{
 
 #inputMessage{
 	margin:auto;
+	display:block;
 	background-color: #ccd8dc;
-	width: 100%;
+	width: 99%;
 	height:10%;
 	color:#072530 ;
 	border: none;
@@ -144,9 +163,10 @@ body{
 
 #submitbutton{
 	margin:auto;
+	display:block;
 	text-align: center;
 	background-color: #2f8e9a;
-	width:100%;
+	width:99%;
 	height:10%;
 	border: none;
 	font-weight: bold;
