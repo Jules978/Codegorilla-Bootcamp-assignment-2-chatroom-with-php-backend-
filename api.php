@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		 "VALUES ('$uname', '$msg', '$mykey')";
 		$connection->exec($sql);
 
-		$getid = 'SELECT ID FROM chat WHERE username ="'.$uname.'" AND message ="'.$msg.'"'; // AND message="'."
+		$getid = 'SELECT ID FROM chat WHERE username ="'.$uname.'" AND message ="'.$msg.'"'; 
 		 
 		$statement = $connection->query($getid); 
 		$result = $statement->fetchColumn();	
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		if(isset($_SERVER['HTTP_REFERER'])) {
 		    $previous = $_SERVER['HTTP_REFERER'];
 		}
-		// die(header("Location: ".$_SERVER["HTTP_REFERER"]));
+		
 
 } elseif ($_SERVER['REQUEST_METHOD'] == 'GET') { //does stuff if the request method is get
 	if(isset($_GET["action"]) && $_GET['action'] == "list") {
@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		
 		try {
-		$getids = 'SELECT id FROM chat WHERE mykey ="'.$mykey.'"'; // AND message="'."
+		$getids = 'SELECT id FROM chat WHERE mykey ="'.$mykey.'"'; 
 		$statement = $connection->query($getids); 
 		$result = $statement->fetchall(\PDO::FETCH_ASSOC);
 		
@@ -65,10 +65,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		}
 
 
-
-
-
-
 		catch(PDOException $e) {
 		 echo $sql . "<br>" . $e->getMessage();
 		}
@@ -83,13 +79,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$user_name = 'tomklru270_chatter';
 	$pass_word = 'wachtwoord';
 	$db="tomklru270_juliachat";
-		$id =  $_GET['id']; // $_POST["id"];
+		$id =  $_GET['id']; 
 		$mykey= $_GET['mykey'];
 		$connection = new PDO($dsn, $user_name, $pass_word);
 		$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 		try {		
-		$getmsg = 'SELECT message FROM chat WHERE id ="'.$id.'" AND mykey ="'.$mykey.'"'; // AND message="'."
+		$getmsg = 'SELECT message FROM chat WHERE id ="'.$id.'" AND mykey ="'.$mykey.'"'; 
 		$getusr = 'SELECT username FROM chat WHERE id ="'.$id.'" AND mykey ="'.$mykey.'"';
 		$statement1 = $connection->query($getmsg); 
 		$statement2 = $connection->query($getusr); 

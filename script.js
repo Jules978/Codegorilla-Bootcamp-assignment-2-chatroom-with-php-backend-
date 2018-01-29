@@ -8,7 +8,7 @@ var correctids = "";
 var highestId =0;
 
 function start(){
-	//mykey = document.getElementById("usernameinput").value; mykeyinput
+	
 uname = document.getElementById("usernameinput").value; //mykeyinput
 mykey = document.getElementById("mykeyinput").value; 
 document.getElementById("username").style.display = "none";
@@ -17,8 +17,6 @@ window.setInterval(function(){ // calls refreshchat every 3 seconds, so chat is 
 	getids();
 }, 1000); 
 }
-
-
 
 function sendmessages(){ //sends new messages to api.php, so they can be added to the .txt file.
 	var d = new Date();
@@ -43,21 +41,16 @@ function scrollToBottom(){ //makes sure the chat div automatically scrolls to th
 } 
 
 
-
-
-
 function getids(){	//accesses a string of all ids that belong to the specified mykey.
 	var idurl = "api.php?action=list&mykey="+mykey; //generates url with mykey.
 	xhr.open('GET', idurl, false);
 	xhr.send();
-	//xhr.onreadystatechange = function () {
- 		//if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-    		var responseids= xhr.response;
+		var responseids= xhr.response;
     		var correctids = JSON.parse(responseids);
     		
     		for (i = 0; i < correctids.length; i++) {
 		correctids[i] = parseInt(correctids[i]); //saves IDs in the array as integers, so they can be used in other functions.
-	}//allids = JSON.parse(responseids);
+	}
     		for (i = 0; i < correctids.length; i++) { //for loop, calls getmessage(id) for every ID that is higher then the highestId variable.
 		if (correctids[i] > highestId) {
 			
@@ -70,22 +63,16 @@ function getids(){	//accesses a string of all ids that belong to the specified m
 			highestId = correctids[i]; //saves the last id in the array as the highestid, so the loop doesn't repeat until there is a new message (new higher id).
 			}
 		}
-			//}
-			
-  		//}
+		
 };
 	
 function getmessages(id){ //gets messages from api.php (.txt file)
 	var surl = "api.php?action=read&mykey="+ mykey +"&id=" + id; 
 	xhr.open('GET', surl, false);
- 	//xhr.onreadystatechange = function () {
- // if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+ 	
     var allmessages=xhr.response; //messages arrive as one giant string, separated by "ENTER"
-    //console.log(allmessages);
-	//document.getElementById("messages").innerHTML = allmessages.replace(/(?:\r\n|\r|\n)/g, '<br />'); //writes messages to div, replaces enter with <br/>
 	scrollToBottom(); //calls scroll function so newest messages are shown
-  	//}
-	//};
+  	
  	xhr.send();
 }; 
 	
