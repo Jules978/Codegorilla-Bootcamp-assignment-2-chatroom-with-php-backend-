@@ -1,7 +1,7 @@
 # chatweek2
 CodeGorilla assignment 2: Chat client with backend. 
 
-Another chat client, this time with backend (SQL). Live version available at: http://wijzijncodegorilla.nl/julia/chat/
+Another chat client, this time with backend (SQL). Live version available at: http://codechamps.nl/julia/chat/
 
 Enter your username, and a chatroom (e.g. "chat"). 
 
